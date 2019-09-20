@@ -33,7 +33,6 @@ Plugin 'mbbill/undotree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vimwiki/vimwiki'
 Plugin 'Valloric/YouCompleteMe'
-Plugin ''
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -89,17 +88,18 @@ let g:gtd#default_action = 'inbox'
 let g:gtd#default_context = 'gollum'
 
 set spell spelllang=en_us
-
+"
 " ALE --------------------
-
+"
 " List of linters
-" sudo pip install cmakelint
-" sudo apt-get install pylint
-" apt-get install shellcheck
+" pip install --user cmakelint
+" pip install --user pylint
+" pacman -S | apt-get install shellcheck
 " go get github.com/mrtazz/checkmake
 "   cd $GOPATH/src/github.com/mrtazz/checkmake
 "   make
-" sudo apt-get install cppcheck
+"   cp checkmake ~/bin/
+" pacman -S | sudo apt-get install cppcheck
 " ALE END ----------------
 
 " git-gutter
@@ -113,5 +113,5 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 "highlight link GitGutterChangeLine DiffText
 
 " Show white spaces and EOL
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:↲
-set list
+"set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:↲
+"set list
