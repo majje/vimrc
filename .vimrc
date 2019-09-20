@@ -90,11 +90,24 @@ let g:gtd#default_context = 'gollum'
 
 set spell spelllang=en_us
 
-" ALE
+" ALE --------------------
+
+" List of linters
+" sudo pip install cmakelint
+" sudo apt-get install pylint
+" apt-get install shellcheck
+" go get github.com/mrtazz/checkmake
+"   cd $GOPATH/src/github.com/mrtazz/checkmake
+"   make
+" sudo apt-get install cppcheck
+" ALE END ----------------
 
 " git-gutter
 let g:gitgutter_override_sign_column_highlight = 1
-highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2 ctermbg=<Y>
-highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3 ctermbg=<Y>
-highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1 ctermbg=<Y>
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+"highlight GitGutterAdd    guifg=#009900 guibg=<X> ctermfg=2 ctermbg=<Y>
+"highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3 ctermbg=<Y>
+"highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1 ctermbg=<Y>
 "highlight link GitGutterChangeLine DiffText
