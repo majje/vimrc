@@ -111,3 +111,7 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 "highlight GitGutterChange guifg=#bbbb00 guibg=<X> ctermfg=3 ctermbg=<Y>
 "highlight GitGutterDelete guifg=#ff2222 guibg=<X> ctermfg=1 ctermbg=<Y>
 "highlight link GitGutterChangeLine DiffText
+
+" Show white spaces and EOL
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:↲
+set list
