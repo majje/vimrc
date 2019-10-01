@@ -77,6 +77,14 @@ make
 cp checkmake ~/bin/
 ```
 
+Hadolint:
+
+```bash
+id=$(docker create hadolint/hadolint:latest)
+docker cp "$id":/bin/hadolint ~/bin/
+docker rm "$id"
+```
+
 ## Git-gutter
 
 ```
