@@ -39,7 +39,7 @@ set laststatus=2
 " ALE ------------------------------
 "let g:ale_linters = {'python': ['bandit']}
 let g:ale_cmake_cmakelint_options = 'syntax'
-let b:ale_linters = ['flake8', 'pylint', 'proselint', 'vint', 'hadolint']
+let b:ale_linters = ['flake8', 'pylint', 'proselint', 'vint', 'hadolint', 'yamllint', 'ansible-lint']
 let b:ale_fixers = ['autopep8']
 
 " Handle different file types ----------------
@@ -51,6 +51,10 @@ augroup END
 augroup conffile
 au BufNewFile,BufRead *.conf setf dosini
 augroup END
+
+"augroup ansible
+"au BufNewFile,BufRead *.yaml set filetype=ansible.yaml
+"augroup END
 
 " vimwiki ------------------------
 set nocompatible

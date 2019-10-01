@@ -51,10 +51,13 @@ Python packages:
  
 ```
 pip install --user \
+    ansible-lint \
  	cmakelint \
  	pylint \
  	proselint \
  	vim-vint \
+    yamllint \
+   
 echo "export PATH=$PATH:$HOME/.local/bin" >> $HOME/.bashrc
 ```
  
