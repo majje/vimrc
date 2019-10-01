@@ -38,7 +38,7 @@ set laststatus=2
 " ALE ------------------------------
 "let g:ale_linters = {'python': ['bandit']}
 let g:ale_cmake_cmakelint_options = 'syntax'
-let b:ale_linters = ['flake8', 'pylint', 'proselint', 'vint']
+let b:ale_linters = ['flake8', 'pylint', 'proselint', 'vint', 'hadolint']
 let b:ale_fixers = ['autopep8']
 
 " Handle different file types ----------------
