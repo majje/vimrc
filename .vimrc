@@ -16,6 +16,7 @@ Plugin 'mbbill/undotree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vimwiki/vimwiki'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'martinda/Jenkinsfile-vim-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
