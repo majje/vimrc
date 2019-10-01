@@ -17,6 +17,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vimwiki/vimwiki'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
+Plugin 'pearofducks/ansible-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,9 +53,9 @@ augroup conffile
 au BufNewFile,BufRead *.conf setf dosini
 augroup END
 
-"augroup ansible
-"au BufNewFile,BufRead *.yaml set filetype=ansible.yaml
-"augroup END
+augroup ansible
+au BufNewFile,BufRead *.yaml set filetype=ansible.yaml
+augroup END
 
 " vimwiki ------------------------
 set nocompatible
